@@ -15,9 +15,9 @@ new Temporal.Collection(collection, name, options);
 Example:
 
 ```javascript
-PostRevisions = new Temporal.Collection(People, 'people.revisions');
+PostRevisions = new Temporal.Collection(Posts, 'posts.revisions');
 ```
-This will create a new collection named “people.revisions” and changes made to `People` via insert, update and remove will be saved to the collection.
+This will create a new collection named “posts.revisions” and changes made to `Posts` via insert, update and remove will be saved to the collection.
 
 ## Find revisions
 The `Temporal.Collection` instance has `find` and `findOne` methods. These work like usual, except that you must also provide a `Date` object specifying the point in time you want to get revisions for.
